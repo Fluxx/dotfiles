@@ -1,0 +1,40 @@
+[github]
+	user = Fluxx
+[alias]
+  co              = checkout
+	ll              = log --graph --decorate --pretty=oneline --abbrev-commit --max-count=15
+	bv              = !git branch --color -v | cut -c1-100
+  fixup           = commit --amend -C HEAD
+  rup             = !git fetch && git rebase origin/master
+	st              = status --branch --short
+  conflicted      = !git ls-files -u | cut -f 2 | sort -u
+  web             = !bash -c 'hub browse -- blob/$(git rev-parse HEAD)/$0'
+  web-blame       = !bash -c 'hub browse -- blame/$(git rev-parse HEAD)/$0'
+  feature         = checkout -b
+  stat            = diff --stat
+[color]
+	ui = auto
+
+[color "diff"]
+	meta = blue bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow bold
+	remote = green bold
+	plain = red bold
+
+[color "status"]
+	added = green bold
+	changed = yellow
+	untracked = blue bold
+[user]
+	name = Jeff Pollard
+	email = jeff.pollard@gmail.com
+[push]
+	default = current
+[core]
+	editor = slime --wait
