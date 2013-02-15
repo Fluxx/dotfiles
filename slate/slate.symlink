@@ -21,16 +21,21 @@ bind 5:alt;cmd  ${ide-left}
 bind 6:alt;cmd  ${terminal-right}
 bind 7:alt;cmd  ${irc-right}
 
-# Setup the layout
+# Setup the layouts
 layout work 'iTerm' ${terminal-right}
 layout work 'Sublime Text 2' ${ide-left}
 layout work 'Linkinus' ${irc-right}
+
+layout solo 'iTerm' ${fullscreen}
+layout solo 'Sublime Text 2' ${fullscreen}
+layout solo 'Linkinus' ${fullscreen}
 
 # And bind the layouts to key commands
 bind w:ctrl;alt;cmd layout work
 
 # Default layouts
 default work resolutions:${mon-laptop};${mon-shimian}
+default solo resolutions:${mon-laptop}
 
 # Other random commands
 bind left:cmd;alt chain throw 0 | ${fullscreen}
