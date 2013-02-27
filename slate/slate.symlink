@@ -42,3 +42,5 @@ bind left:cmd;alt chain throw 0 | ${fullscreen}
 bind right:cmd;alt chain throw 1 | ${centered} | ${fullscreen}
 
 bind .:cmd hint QWERTYUIOP
+
+bind /:shift;cmd sequence focus 'iTerm' | focus 'Linkinus' | focus 'Sublime Text 2'
