@@ -11,20 +11,17 @@ alias mon-shimian 2560x1440
 alias fullscreen     corner top-left resize:screenSizeX;screenSizeY
 alias centered       move   screenSizeX/4;0 screenSizeX/2;screenSizeY
 alias ide-left       corner top-left resize:55*screenSizeX/100;screenSizeY 1
-alias terminal-right corner top-right resize:45*screenSizeX/100;3*screenSizeY/4 1
-alias irc-right      corner bottom-right resize:45*screenSizeX/100;25*screenSizeY/100 1
+alias terminal-right corner top-right resize:45*screenSizeX/100;screenSizeY 1
 
 # Bind the positions to key commands
 bind 1:alt;cmd  ${fullscreen}
 bind 3:alt;cmd  ${centered}
 bind 5:alt;cmd  ${ide-left}
 bind 6:alt;cmd  ${terminal-right}
-bind 7:alt;cmd  ${irc-right}
 
 # Setup the layouts
-layout work 'iTerm' ${terminal-right}
+layout work 'iTerm':TITLE_ORDER_REGEX=Jeffs ${terminal-right}
 layout work 'Sublime Text 2' ${ide-left}
-layout work 'Linkinus' ${irc-right}
 
 layout solo 'iTerm' ${fullscreen}
 layout solo 'Sublime Text 2' ${fullscreen}
@@ -43,4 +40,4 @@ bind right:cmd;alt chain throw 1 | ${centered} | ${fullscreen}
 
 bind .:cmd hint QWERTYUIOP
 
-bind /:shift;cmd sequence focus 'iTerm' | focus 'Linkinus' | focus 'Sublime Text 2'
+bind /:shift;cmd sequence focus 'iTerm' | focus 'Sublime Text 2'
