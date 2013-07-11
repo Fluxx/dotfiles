@@ -21,10 +21,10 @@ bind 6:alt;cmd  ${terminal-right}
 
 # Setup the layouts
 layout work 'iTerm':TITLE_ORDER_REGEX=Jeffs ${terminal-right}
-layout work 'Sublime Text 2' ${ide-left}
+layout work 'Sublime Text' ${ide-left}
 
 layout solo 'iTerm' ${fullscreen}
-layout solo 'Sublime Text 2' ${fullscreen}
+layout solo 'Sublime Text' ${fullscreen}
 layout solo 'Linkinus' ${fullscreen}
 
 # And bind the layouts to key commands
