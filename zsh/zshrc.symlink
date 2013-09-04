@@ -24,3 +24,9 @@ if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
 fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Node Version Manager
+[[ -s /Users/jeffpollard/.nvm/nvm.sh ]] && . /Users/jeffpollard/.nvm/nvm.sh
