@@ -1,4 +1,4 @@
-export EDITOR='slime'
+export EDITOR='slime --wait'
 export KAFKA_PATH=/Users/jeff/Code/kafka-0.7.1-incubating
 export ZOOKEEPER_PATH=/usr/local/Cellar/zookeeper/3.4.3/libexec
 export NOSE_REDNOSE=1
