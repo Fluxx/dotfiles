@@ -40,4 +40,4 @@ bind right:cmd;alt chain throw 1 | ${centered} | ${fullscreen}
 
 bind .:cmd hint QWERTYUIOP
 
-bind /:shift;cmd sequence focus 'iTerm' | focus 'Sublime Text 2'
+bind /:shift;cmd sequence focus 'iTerm' | focus 'Sublime Text'
