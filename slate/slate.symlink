@@ -5,7 +5,7 @@ config windowHintsSpread true
 
 # Monitors
 alias mon-laptop 1440x900
-alias mon-shimian 2560x1440
+alias mon-cinema 2560x1440
 
 # Setup the positions
 alias fullscreen     corner top-left resize:screenSizeX;screenSizeY
@@ -21,7 +21,8 @@ bind 6:alt;cmd  ${terminal-right}
 
 # Setup the layouts
 layout work 'iTerm':TITLE_ORDER_REGEX=Jeffs ${terminal-right}
-layout work 'Sublime Text' ${ide-left}
+layout work 'iTerm':TITLE_ORDER_REGEX=Jeffs ${terminal-right}
+layout work 'Slack' throw 0 | ${fullscreen}
 
 layout solo 'iTerm' ${fullscreen}
 layout solo 'Sublime Text' ${fullscreen}
@@ -31,7 +32,7 @@ layout solo 'Linkinus' ${fullscreen}
 bind w:ctrl;alt;cmd layout work
 
 # Default layouts
-default work resolutions:${mon-laptop};${mon-shimian}
+default work resolutions:${mon-laptop};${mon-cinema}
 default solo resolutions:${mon-laptop}
 
 # Other random commands
