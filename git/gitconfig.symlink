@@ -37,7 +37,6 @@
 [push]
   default = current
 [core]
-  editor = slime --wait
         excludesfile = ~/.gitignore
 [pull]
   rebase = true
