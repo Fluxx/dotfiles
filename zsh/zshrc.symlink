@@ -25,4 +25,5 @@ then
   source ~/.localrc
 fi
 
-export PATH="/usr/local/opt/sbt@0.13/bin:$PATH"
+export PATH="/usr/local/opt/sbt@0.13/bin:/Users/jeffpollard/go/bin:/users/jeffpollard/Code/Strava/configuration/mesos/tools/:$PATH"
+source ~/.aws/token_profile
