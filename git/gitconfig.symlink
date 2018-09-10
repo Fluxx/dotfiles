@@ -37,6 +37,6 @@
 [push]
   default = current
 [core]
-        excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [pull]
   rebase = true

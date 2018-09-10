@@ -24,7 +24,3 @@ if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
 fi
-
-export PATH="/usr/local/opt/sbt@0.13/bin:/Users/jeffpollard/go/bin:$PATH"
-source ~/.aws/token_profile
-export PATH="/usr/local/opt/thrift@0.9/bin:$PATH"
