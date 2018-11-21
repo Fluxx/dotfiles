@@ -21,3 +21,7 @@ chflags nohidden ~/Library
 
 # Set a really fast key repeat.
 defaults write NSGlobalDomain KeyRepeat -int 0
+
+# Turn off multitouch swipe back. No human can be a precise enough
+# trackpad user for this to be a useful feature.
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
