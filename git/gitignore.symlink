@@ -7,3 +7,6 @@
 *.pyc
 .private
 *.rdb
+.jvmopts
+.sbtopts
+.ruby-version

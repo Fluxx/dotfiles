@@ -7,11 +7,16 @@
   fixup           = commit --amend -C HEAD
   rup             = !git fetch && git rebase origin/master
   st              = status --branch --short
+  cam             = commit -am
   conflicted      = !git ls-files -u | cut -f 2 | sort -u
   web             = !bash -c 'hub browse -- blob/$(git rev-parse HEAD)/$0'
   web-blame       = !bash -c 'hub browse -- blame/$(git rev-parse HEAD)/$0'
   feature         = checkout -b
   stat            = diff --stat
+  wups            = reset --hard HEAD^
+  done            = !git checkout master && git branch -D @{-1} && git pull
+[color]
+  ui = auto
 [user]
   name = Jeff Pollard
   email = jeff.pollard@gmail.com
