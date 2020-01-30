@@ -10,3 +10,5 @@
 .jvmopts
 .sbtopts
 .ruby-version
+.bloop
+.metals
