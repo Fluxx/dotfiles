@@ -15,6 +15,7 @@
   stat            = diff --stat
   wups            = reset --hard HEAD^
   done            = !git checkout master && git branch -D @{-1} && git pull
+  repush          = !git pull && git push
 [color]
   ui = auto
 [user]
