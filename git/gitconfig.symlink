@@ -5,7 +5,7 @@
   ll              = log --graph --decorate --pretty=oneline --abbrev-commit --max-count=30
   bv              = !git branch --color -v | cut -c1-100
   fixup           = commit --amend -C HEAD
-  rup             = !git fetch && git rebase origin/master
+  rup             = !git fetch && git rebase origin/main
   st              = status --branch --short
   cam             = commit -am
   conflicted      = !git ls-files -u | cut -f 2 | sort -u
@@ -14,13 +14,13 @@
   feature         = checkout -b
   stat            = diff --stat
   wups            = reset --hard HEAD^
-  done            = !git checkout master && git branch -D @{-1} && git pull
+  done            = !git checkout main && git branch -D @{-1} && git pull
   repush          = !git pull && git push
 [color]
   ui = auto
 [user]
-  name = Jeff Pollard
-  email = jeff.pollard@gmail.com
+	name = Jeff Pollard
+	email = jeff.pollard@gmail.com
 [push]
   default = current
 [core]

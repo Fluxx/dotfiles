@@ -12,3 +12,5 @@
 .ruby-version
 .bloop
 .metals
+.vscode
+metals.sbt
