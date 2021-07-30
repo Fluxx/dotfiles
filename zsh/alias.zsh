@@ -1,6 +1,0 @@
-alias b='bundle exec'
-alias remove-pyc='find . -name "*.pyc" -exec rm -rf {} \;'
-alias hgrep='history | grep'
-alias lint-unused-imports='git stat --name-only master | xargs flake8 | grep unused'
-alias aws-token='~/Code/Strava/configuration/scripts/aws-token; source ~/.aws/token_profile'
-alias paasage='USER=jeffpollard ~/Code/Strava/configuration/mesos/tools/paasage --no-connectivity-check'
