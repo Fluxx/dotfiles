@@ -50,3 +50,6 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
+
+# Disable automatic capitalization.
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
