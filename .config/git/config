@@ -23,6 +23,7 @@
 	email = jeff.pollard@gmail.com
 [push]
   default = current
+  autoSetupRemote = true
 [core]
   excludesfile = ~/.config/git/ignore
 [pull]
