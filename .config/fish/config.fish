@@ -3,3 +3,5 @@ alias clipboard-restart='killall pboard'
 
 fish_add_path /opt/Homebrew/bin
 fish_add_path /opt/bin
+fish_add_path /usr/local/bin
+fish_add_path ~/Code/Strava/configuration/mesos/tools/
