@@ -13,6 +13,8 @@
 .bloop
 .metals
 .vscode
+.scalafix.conf
 metals.sbt
 .bsp/
 .sbtopt
+target/

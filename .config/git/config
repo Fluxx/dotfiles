@@ -8,6 +8,7 @@
   rup             = !git fetch && git rebase origin/main
   st              = status --branch --short
   cam             = commit -am
+  ff              = merge --ff-only
   conflicted      = !git ls-files -u | cut -f 2 | sort -u
   web             = !bash -c 'hub browse -- blob/$(git rev-parse HEAD)/$0'
   web-blame       = !bash -c 'hub browse -- blame/$(git rev-parse HEAD)/$0'
@@ -16,6 +17,7 @@
   wups            = reset --hard HEAD^
   done            = !git checkout main && git branch -D @{-1} && git pull
   repush          = !git pull && git push
+  delete          = branch -D
 [color]
   ui = auto
 [user]
